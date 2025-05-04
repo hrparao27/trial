@@ -101,6 +101,11 @@ html, body {
 /* header and links */
 .site-header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -160,7 +165,7 @@ html, body {
   justify-content: center;
   overflow-wrap: break-word;
   opacity: 0;
-  animation: fadefooter .5s ease-out forwards;
+  animation: fadefooter 1.5s ease-out forwards;
   transform: translateY(50px);
 }
 
@@ -175,6 +180,7 @@ html, body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 }
 
 .cha {
